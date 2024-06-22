@@ -1,0 +1,191 @@
+main{
+    background-color: rgb(230, 230, 230);
+}
+
+/**INFORMACIÓN GENERAL*/
+
+.accesos{
+    display: grid;
+    grid-auto-rows: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.accesos img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.texto{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.texto{
+    padding-top: 80px;
+}
+
+.texto h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.texto p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.texto ol{
+    padding-bottom: 20px;
+}
+
+/**ACCESOS DIRECTOS*/
+
+/***/
+
+/*!------FOOTER------*/
+
+footer{
+    background-color: rgb(26, 50, 95);
+}
+
+/**DATOS IMPORTANTES (CONTACTO TELEFÓNICO, SEDE CENTRAL, DATOS FISCALES)*/
+
+.footer-datos-importantes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.footer-datos-importantes h2{
+    color: white;
+}
+
+.footer-datos-importantes p{
+    color: white;
+}
+
+.footer-central-turnos h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-central-turnos p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-sede-central h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-sede-central p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-datos-fiscales h2{
+    font-size: 30px;
+    padding-top: 23px;
+    text-align: center;
+}
+
+.footer-datos-fiscales p{
+    font-size: 18px;
+    text-align: center;
+}
+
+/**ACCESO A LINKS - RESUMEN DE ACCESOS DIRECTOS*/
+
+.footer-resumen-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.footer-resumen-links h2{
+    color: white;
+}
+
+.footer-resumen-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-pacientes{
+    padding-top: 30px;
+}
+
+.footer-pacientes h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-profesionales h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-acerca h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-accesos h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/**LOGO Y REDES SOCIALES*/
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo-footer img{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.redes-sociales h2{
+    padding-top: 20px;
+    color: white;
+}
+
+.redes-sociales img{
+    width: 50px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+}
+
+/**DATOS DE CREACIÓN*/
+
+.creacion h2{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.creacion p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
