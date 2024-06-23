@@ -1,4 +1,4 @@
-﻿# 🏥 Hospital "Corazon Abierto" ♡ (Website Under Construction)
+﻿# 🏥 Hospital "Corazon Abierto" ♡
 
 This is a fictional website project for the "Corazon Abierto" hospital, developed as part of my full-stack programming studies. The primary goal of this project is to practice and apply knowledge gained in HTML and CSS.
 
