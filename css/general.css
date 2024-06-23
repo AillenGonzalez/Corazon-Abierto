@@ -59,3 +59,26 @@ header nav ul li a{
 .whatsapp img{
     width: 150px;
 }
+
+/* Logo y redes sociales */
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo-footer img{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.redes-sociales img{
+    width: 50px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+}
