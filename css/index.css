@@ -1,21 +1,22 @@
-/*!------MAIN------*/
 
-/**TITULO PRINCIPAL*/
+/*!――――――――――INDEX MAIN――――――――――*/
 
-.titulo h1{
+/* Titulo principal */
+
+.titulo-index h1{
     font-size: 90px;
     color: white;
     text-shadow: 2px 2px 2px rgb(33, 18, 90);
 }
 
-.titulo h2{
+.titulo-index h2{
     font-size: 20px;
     color: white;
     text-shadow: 2px 2px 2px black;
     opacity: 0.7;
 }
 
-.titulo{
+.titulo-index{
     background-image: url(../img/portadainicio.jpg);
     background-position: center;
     background-size: 100%;
@@ -28,9 +29,9 @@
     align-items: center;
 }
 
-/**INFORMACIÓN DESTACADA (RECUARDOS GRISES)*/
+/* Información destacada (recuadros grises) */
 
-.destacados{
+.destacados-index{
     height: 300px;
     display: grid;
     grid-template-rows: 280px;
@@ -40,21 +41,21 @@
     padding-top: 20px;
 }
 
-.destacados div{
+.destacados-index div{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.destacados img{
+.destacados-index img{
     width: 120px;
     height: 120px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.destacados a{
+.destacados-index a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,25 +64,25 @@
     font-size: 16px;
 }
 
-.destacados h4{
+.destacados-index h4{
     font-size: 12px;
     color: rgb(180, 180, 180);
 }
 
-.destacados h3{
+.destacados-index h3{
     padding-top: 5px;
     font-size: 16px;
 }
 
-/**APARTADO PARA PACIENTES Y PROFESIONALES*/
+/* Apartado para pacientes y profesionales */
 
-.info{
+.info-index{
     display: grid;
     grid-template-rows: 500px;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.info h3{
+.info-index h3{
     font-size: 60px;
     color: white;
     text-align: center;
@@ -120,9 +121,9 @@
     color: white;
 }
 
-/**ACCESO A APARTADOS IMPORTANTES PT.1 Y PT.2*/
+/* Acceso a apartados importantes PT.1 y PT.2 */
 
-.importantes{
+.importantes-index{
     height: 270px;
     display: grid;
     grid-template-rows: 280px;
@@ -134,18 +135,18 @@
     background-color: rgb(26, 50, 95);
 }
 
-.importantes img{
+.importantes-index img{
     width: 100px;
     padding-bottom: 10px;
 }
 
-.importantes h3{
+.importantes-index h3{
     font-size: 15px;
     color: white;
     padding-bottom: 5px;    
 }
 
-.importantes p{
+.importantes-index p{
     color: rgb(161, 161, 161);
     padding-left: 50px;
     padding-right: 50px;
@@ -153,14 +154,14 @@
     padding-bottom: 10px;
 }
 
-.importantes div a{
+.importantes-index div a{
     color: white;
     font-size: 15px;
 }
 
-/**TESTIMONIOS DE PACIENTES*/
+/* Testimonios de pacientes */
 
-.testimonio{
+.testimonio-index{
     background-image: url(../img/historiapacientes.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -172,33 +173,33 @@
     text-align: center;
 }
 
-.testimonio h2{
+.testimonio-index h2{
     font-size: 40px; 
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
-.testimonio div a{
+.testimonio-index div a{
     color: white;
     font-size: 20px;
 }
 
-/**ACCESO A TURNOS E HISTORIA DEL HOSPITAL*/
+/* Acceso a turnos e historia del hospital */
 
-.nosotros{
+.nosotros-index{
     display: grid;
     grid-template-rows: 450px;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.nosotros h2{
+.nosotros-index h2{
     font-size: 35px;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 2px black;
 }
 
-.turnos{
+.turnos-index{
     background-image: url(../img/turno.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -210,11 +211,11 @@
     text-align: center;
 }
 
-.turnos a{
+.turnos-index a{
     color: white;
 }
 
-.historia{
+.historia-index{
     background-image: url(../img/historianuestra.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -226,11 +227,11 @@
     text-align: center;
 }
 
-.historia a{
+.historia-index a{
     color: white;
 }
 
-/**UBICACIÓN DEL HOSPITAL (IMAGEN CON ACCESO A MAPS)*/
+/* Ubicación del hospital (imagen con acceso a Google Maps) */
 
 .mapa{
     display: grid;
@@ -268,13 +269,13 @@
     color: white;
 }
 
-/*!------FOOTER------*/
+/*!――――――――――INDEX FOOTER――――――――――*/
 
-footer{
+.footer-index-fondo{
     background-color: rgb(230, 230, 230);
 }
 
-/**DATOS IMPORTANTES (CONTACTO TELEFÓNICO, SEDE CENTRAL, DATOS FISCALES)*/
+/* Datos importantes (contacto telefónico, sede central, datos fiscales) */
 
 .footer-datos-importantes{
     display: flex;
@@ -286,44 +287,20 @@ footer{
 
 .footer-datos-importantes h2{
     color: rgb(33, 18, 90);
+    font-size: 30px;
+    text-align: center;
 }
 
 .footer-datos-importantes p{
-    color: rgb(33, 18, 90);
-}
-
-.footer-central-turnos h2{
-    font-size: 30px;
-    text-align: center;
-}
-
-.footer-central-turnos p{
-    font-size: 18px;
-    text-align: center;
-}
-
-.footer-sede-central h2{
-    font-size: 30px;
-    text-align: center;
-}
-
-.footer-sede-central p{
     font-size: 18px;
     text-align: center;
 }
 
 .footer-datos-fiscales h2{
-    font-size: 30px;
     padding-top: 23px;
-    text-align: center;
 }
 
-.footer-datos-fiscales p{
-    font-size: 18px;
-    text-align: center;
-}
-
-/**ACCESO A LINKS - RESUMEN DE ACCESOS DIRECTOS*/
+/* Accesos directos a diversas partes de la plataforma */
 
 .footer-resumen-links{
     display: flex;
@@ -335,6 +312,8 @@ footer{
 
 .footer-resumen-links h2{
     color: rgb(33, 18, 90);
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-resumen-links a{
@@ -347,27 +326,7 @@ footer{
     padding-top: 30px;
 }
 
-.footer-pacientes h2{
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.footer-profesionales h2{
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.footer-acerca h2{
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.footer-accesos h2{
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-/**LOGO Y REDES SOCIALES*/
+/* Logo y redes sociales */
 
 .logo-y-redes{
     display: flex;
@@ -395,7 +354,7 @@ footer{
     text-decoration: none;
 }
 
-/**DATOS DE CREACIÓN*/
+/* Información sobre creación de web */
 
 .creacion h2{
     font-size: 15px;
