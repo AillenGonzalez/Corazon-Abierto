@@ -17,7 +17,7 @@
 }
 
 .titulo-index{
-    background-image: url(../img/portadainicio.jpg);
+    background-image: url(../img/Portada-Index.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 }
 
 .info-pacientes{
-    background-image: url(../img/infopacientes.jpg);
+    background-image: url(../img/Informacion-Pacientes.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-left: 200px;
@@ -106,7 +106,7 @@
 }
 
 .info-profesionales{
-    background-image: url(../img/infodoctor.jpg);
+    background-image: url(../img/Informacion-Profesionales.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-left: 200px;
@@ -162,7 +162,7 @@
 /* Testimonios de pacientes */
 
 .testimonio-index{
-    background-image: url(../img/historiapacientes.jpeg);
+    background-image: url(../img/Historia-Pacientes.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-left: 200px;
@@ -200,7 +200,7 @@
 }
 
 .turnos-index{
-    background-image: url(../img/turno.png);
+    background-image: url(../img/Turnos.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding-left: 150px;
@@ -216,7 +216,7 @@
 }
 
 .historia-index{
-    background-image: url(../img/historianuestra.jpg);
+    background-image: url(../img/Historia-Hospital.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-left: 200px;
@@ -254,7 +254,7 @@
 }
 
 .mapa{
-    background-image: url(../img/mapahospital.png);
+    background-image: url(../img/Mapa-Hospital.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding-left: 50px;
@@ -277,7 +277,7 @@
 
 /* Datos importantes (contacto telefónico, sede central, datos fiscales) */
 
-.footer-datos-importantes{
+.index-contactos{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -285,24 +285,24 @@
     border-bottom: 1px solid rgb(33, 18, 90);
 }
 
-.footer-datos-importantes h2{
+.index-contactos h2{
     color: rgb(33, 18, 90);
     font-size: 30px;
     text-align: center;
 }
 
-.footer-datos-importantes p{
+.index-contactos p{
     font-size: 18px;
     text-align: center;
 }
 
-.footer-datos-fiscales h2{
+.index-datos-fiscales h2{
     padding-top: 23px;
 }
 
 /* Accesos directos a diversas partes de la plataforma */
 
-.footer-resumen-links{
+.resumen-links{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -310,13 +310,13 @@
     border-bottom: 1px solid rgb(33, 18, 90);
 }
 
-.footer-resumen-links h2{
+.resumen-links h2{
     color: rgb(33, 18, 90);
     font-size: 20px;
     padding-bottom: 10px;
 }
 
-.footer-resumen-links a{
+.resumen-links a{
     color: rgb(33, 18, 90);
     text-decoration: none;
     font-size: 15px;
