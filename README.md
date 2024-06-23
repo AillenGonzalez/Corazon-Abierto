@@ -1,6 +1,6 @@
-﻿# 🏥 Hospital "Corazon Abierto" ♡
+﻿# 🏥 Hospital "Corazón Abierto" ♡
 
-This is a fictional website project for the "Corazon Abierto" hospital, developed as part of my full-stack programming studies. The primary goal of this project is to practice and apply knowledge gained in HTML and CSS.
+This is a fictional website project for the "**Corazón Abierto**" hospital, developed as part of my full-stack programming studies. The primary goal of this project is to practice and apply knowledge gained in HTML and CSS.
 
 ## 🌷 Project Contents
 
@@ -10,8 +10,8 @@ The project consists of the following main files and directories:
 
 • **css/**:
 
-    • styles.css: Main stylesheet file for all pages.
-    • general/: Directory containing general styles shared across all pages.
+_styles.css: Main stylesheet file for all pages.
+_general/: Directory containing general styles shared across all pages.
 
 • **img/**: Directory storing images used on the site.
 

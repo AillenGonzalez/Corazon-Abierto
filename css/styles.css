@@ -1,3 +1,90 @@
+/*!――――――――――――――――――――GENERAL STYLES――――――――――――――――――――*/
+
+/* Tipos de fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Barra de Navegación */
+
+header{
+    background-color: rgb(26, 50, 95);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+}
+
+header img{
+    width: 250px;
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px 5px 10px;
+    font-size: 18px;
+}
+
+/* Logo flotante de Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp img{
+    width: 150px;
+}
+
+/* Logo y redes sociales */
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo-footer img{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.redes-sociales img{
+    width: 50px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+}
+
 /*!――――――――――――――――――――INDEX――――――――――――――――――――*/
 
 /* Titulo principal */
@@ -325,7 +412,7 @@
 
 /* Logo y redes sociales */
 
-.index-redes-sociales h2{
+.h2-redes{
     padding-top: 20px;
     color: rgb(33, 18, 90);
 }
@@ -347,3 +434,186 @@
 
 /*!――――――――――――――――――――PACIENTES――――――――――――――――――――*/
 
+/* Titulo principal */
+
+.titulo-pacientes h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-pacientes h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-pacientes{
+    background-image: url(../img/Portada-Pacientes.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-pacientes{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Información general */
+
+.accesos{
+    display: grid;
+    grid-auto-rows: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.accesos img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.texto-pacientes{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.texto-pacientes{
+    padding-top: 80px;
+}
+
+.texto-pacientes h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.texto-pacientes p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.texto-pacientes ol{
+    padding-bottom: 20px;
+}
+
+/* Accesos directos */
+
+/***/
+
+.footer-pacientes-fondo{
+    background-color: rgb(26, 50, 95);
+}
+
+/* Datos importantes (contacto telefónico, sede central, datos fiscales) */
+
+.pacientes-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.pacientes-contactos h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pacientes-contactos p{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pacientes-datos-fiscales h2{
+    padding-top: 23px;
+}
+
+/* Accesos directos a diversas partes de la plataforma */
+
+.alternativo-resumen-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.alternativo-resumen-links h2{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.alternativo-resumen-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-pacientes{
+    padding-top: 30px;
+}
+
+/* Logo y redes sociales */
+
+.h2-redes-alternativo{
+    padding-top: 20px;
+    color: white;
+}
+
+/* Información sobre creación de web */
+
+.pacientes-creacion h2{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.pacientes-creacion p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/*!――――――――――――――――――――PROFESIONALES――――――――――――――――――――*/
+
+.titulo-profesionales h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-profesionales h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-profesionales{
+    background-image: url(../img/Portada-Profesionales.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
