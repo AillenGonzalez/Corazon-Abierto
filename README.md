@@ -10,8 +10,8 @@ The project consists of the following main files and directories:
 
 • **css/**:
 
-    • styles.css: Main stylesheet file for all pages.
-    • general/: Directory containing general styles shared across all pages.
+- styles.css: Main stylesheet file for all pages.
+- general/: Directory containing general styles shared across all pages.
 
 • **img/**: Directory storing images used on the site.
 
