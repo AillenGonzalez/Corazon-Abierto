@@ -467,11 +467,11 @@ header nav ul li a{
     background-color: rgb(230, 230, 230);
 }
 
-/* Información general */
+/* Accesos directos */
 
 .accesos{
     display: grid;
-    grid-auto-rows: 900px;
+    grid-auto-rows: 1000px;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     border-bottom: 1px solid black;
@@ -485,6 +485,21 @@ header nav ul li a{
     height: 50px;
 }
 
+.accesos-aplicativos{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+}
+
+/* Texto Pacientes */
+
 .texto-pacientes{
     grid-column-start: 2;
     grid-column-end: 4;
@@ -492,6 +507,7 @@ header nav ul li a{
 
 .texto-pacientes{
     padding-top: 80px;
+    padding-left: 50px;
 }
 
 .texto-pacientes h2{
@@ -507,10 +523,6 @@ header nav ul li a{
 .texto-pacientes ol{
     padding-bottom: 20px;
 }
-
-/* Accesos directos */
-
-/***/
 
 .footer-pacientes-fondo{
     background-color: rgb(26, 50, 95);
