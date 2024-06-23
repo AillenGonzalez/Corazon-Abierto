@@ -1,3 +1,33 @@
+/*!------MAIN------*/
+
+/**TITULO PRINCIPAL*/
+
+.titulo h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo{
+    background-image: url(../img/portadainicio.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /**INFORMACIÓN DESTACADA (RECUARDOS GRISES)*/
 
 .destacados{
