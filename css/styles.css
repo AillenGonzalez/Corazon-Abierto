@@ -585,6 +585,10 @@ header nav ul li a{
     height: 50px;
 }
 
+.accesos h3{
+    color:rgb(33, 18, 90);
+}
+
 .accesos-aplicativos{
     display: grid;
     text-align: center;
