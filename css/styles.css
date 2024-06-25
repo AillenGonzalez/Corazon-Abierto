@@ -549,6 +549,7 @@ header nav ul li a{
     align-items: center;
     padding-bottom: 30px;
     border-bottom: 1px solid white;
+    padding-top: 30px;
 }
 
 .pacientes-contactos h2{
@@ -561,6 +562,13 @@ header nav ul li a{
     color: rgb(194, 194, 194);
     font-size: 18px;
     text-align: center;
+}
+
+.pacientes-datos-fiscales{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .pacientes-datos-fiscales h2{
