@@ -62,13 +62,13 @@ header nav ul li a{
     width: 150px;
 }
 
-.footer-pacientes-fondo{
+.footer-alternativo-fondo{
     background-color: rgb(26, 50, 95);
 }
 
 /* Datos importantes (contacto telefónico, sede central, datos fiscales) */
 
-.pacientes-contactos{
+.alternativo-contactos{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -77,26 +77,26 @@ header nav ul li a{
     padding-top: 30px;
 }
 
-.pacientes-contactos h2{
+.alternativo-contactos h2{
     color: white;
     font-size: 30px;
     text-align: center;
 }
 
-.pacientes-contactos p{
+.alternativo-contactos p{
     color: rgb(194, 194, 194);
     font-size: 18px;
     text-align: center;
 }
 
-.pacientes-datos-fiscales{
+.alternativo-datos-fiscales{
     border-left: 1px solid white;
     border-right: 1px solid white;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.pacientes-datos-fiscales h2{
+.alternativo-datos-fiscales h2{
     padding-top: 23px;
 }
 
