@@ -686,6 +686,30 @@ header nav ul li a{
     align-items: center;
 }
 
+/* Main */
+
+.main-profesionales{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-profesionales h2{
+    background-color: rgb(26, 50, 95);
+    color: white;
+
+}
+
+.main-profesionales p{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-profesionales ol li{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
 /*!――――――――――――――――――――MI CORAZON――――――――――――――――――――*/
 
 /* Titulo principal */
