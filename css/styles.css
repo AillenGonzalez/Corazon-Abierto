@@ -179,11 +179,12 @@ header nav ul li a{
 
 .accesos{
     display: grid;
-    grid-auto-rows: 1000px;
+    grid-auto-rows: 1500px;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     border-bottom: 1px solid black;
     align-items: center;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -675,7 +676,7 @@ header nav ul li a{
     background-color: rgb(230, 230, 230);
 }
 
-/* Texto Pacientes */
+/* Texto Profesionales */
 
 .texto-profesionales{
     display: grid;
@@ -698,10 +699,6 @@ header nav ul li a{
     padding-top: 10px;
     padding-bottom: 20px;
     padding-right: 50px;
-}
-
-.texto-profesionales ol{
-    padding-bottom: 20px;
 }
 
 /*!――――――――――――――――――――ACERCA DE CORAZON ABIERTO――――――――――――――――――――*/
@@ -734,28 +731,28 @@ header nav ul li a{
     align-items: center;
 }
 
-/* Main */
-
 .main-acercade{
+    background-color: rgb(230, 230, 230);
+    margin-top: 500px;
+}
+
+/* Texto Acerca de Corazón Abierto */
+
+.texto-acercade{
+    grid-column: 2 / span 2;
+    padding-left: 50px;
+}
+
+.texto-acercade h2{
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.main-acercade h2{
-    background-color: rgb(26, 50, 95);
-    color: white;
-
-}
-
-.main-acercade p{
-    padding-left: 20px;
-    padding-top: 20px;
+.texto-acercade p{
+    text-align: justify;
+    padding-top: 10px;
     padding-bottom: 20px;
-}
-
-.main-acercade ol li{
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-right: 50px;
 }
 
 /*!――――――――――――――――――――MI CORAZON――――――――――――――――――――*/
