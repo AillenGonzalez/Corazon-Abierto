@@ -175,6 +175,53 @@ header nav ul li a{
     padding-bottom: 20px;
 }
 
+/* Accesos directos */
+
+.accesos{
+    display: grid;
+    grid-auto-rows: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.accesos img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.accesos h3{
+    color:rgb(33, 18, 90);
+}
+
+.accesos-aplicativos{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+}
+
+.footer-profesionales{
+    padding-top: 30px;
+}
+
+.footer-acercade{
+    padding-top: 8px;
+}
+
+.footer-accesos{
+    padding-top: 10px;
+}
+
 
 /*!――――――――――――――――――――INDEX――――――――――――――――――――*/
 
@@ -567,44 +614,10 @@ header nav ul li a{
     background-color: rgb(230, 230, 230);
 }
 
-/* Accesos directos */
-
-.accesos{
-    display: grid;
-    grid-auto-rows: 1000px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    border-bottom: 1px solid black;
-    align-items: center;
-    padding-bottom: 80px;
-}
-
-.accesos img{
-    padding-top: 50px;
-    width: 50px;
-    height: 50px;
-}
-
-.accesos h3{
-    color:rgb(33, 18, 90);
-}
-
-.accesos-aplicativos{
-    display: grid;
-    text-align: center;
-    padding-right: 20px;
-    padding-left: 50px;
-    padding-bottom: 10px;
-    border-right: 1px solid black;
-}
-
-.accesos-aplicativos p{
-    text-align: center;
-}
-
 /* Texto Pacientes */
 
 .texto-pacientes{
+    display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
 }
@@ -620,8 +633,10 @@ header nav ul li a{
 }
 
 .texto-pacientes p{
+    text-align: justify;
     padding-top: 10px;
     padding-bottom: 20px;
+    padding-right: 50px;
 }
 
 .texto-pacientes ol{
@@ -656,6 +671,39 @@ header nav ul li a{
     align-items: center;
 }
 
+.main-profesionales{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Texto Pacientes */
+
+.texto-profesionales{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.texto-profesionales{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.texto-profesionales h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.texto-profesionales p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+.texto-profesionales ol{
+    padding-bottom: 20px;
+}
+
 /*!――――――――――――――――――――ACERCA DE CORAZON ABIERTO――――――――――――――――――――*/
 
 /* Titulo principal */
@@ -688,24 +736,24 @@ header nav ul li a{
 
 /* Main */
 
-.main-profesionales{
+.main-acercade{
     text-align: center;
     padding-top: 20px;
 }
 
-.main-profesionales h2{
+.main-acercade h2{
     background-color: rgb(26, 50, 95);
     color: white;
 
 }
 
-.main-profesionales p{
+.main-acercade p{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.main-profesionales ol li{
+.main-acercade ol li{
     padding-left: 20px;
     padding-bottom: 20px;
 }
