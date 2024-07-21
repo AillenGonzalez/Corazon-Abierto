@@ -312,7 +312,7 @@ header nav ul li a{
     width: 100vw;
 }
 
-.info-index h3{
+.info-index h2{
     font-size: 60px;
     color: white;
     text-align: center;
@@ -411,7 +411,7 @@ header nav ul li a{
     text-shadow: 2px 2px 2px black;
 }
 
-.testimonio-index div a{
+.testimonio-index a{
     color: white;
     font-size: 20px;
 }
@@ -494,11 +494,12 @@ header nav ul li a{
     background-size: cover;
     height: 500px;
     background-position: center;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    padding-left: 20px;
 }
 
 .mapa a{
@@ -1029,6 +1030,14 @@ header nav ul li a{
         height: 350px;
     }
 
+    .info-pacientes h2, .info-profesionales h2, .turnos-index h2, .historia-index h2, .testimonio-index h2{
+        font-size: 30px;
+    }
+
+    .info-pacientes a, .info-profesionales a, .turnos-index a, .historia-index a, .testimonio-index a{
+        font-size: 15px;
+    }
+
     .info-profesionales, .historia-index{
         border-top: 1px solid white;
     }
@@ -1043,6 +1052,14 @@ header nav ul li a{
 
     .importantes-index div a{
         font-size: 12px;
+    }
+
+    .mapa h2{
+        font-size: 15px;
+    }
+
+    .mapa h3{
+        font-size: 35px;
     }
 
     .index-contactos h2{
