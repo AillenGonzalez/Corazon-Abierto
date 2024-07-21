@@ -1,0 +1,1293 @@
+/*!――――――――――――――――――――GENERAL STYLES――――――――――――――――――――*/
+
+/* Tipos de fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Barra de Navegación */
+
+header{
+    background-color: rgb(26, 50, 95);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100vw;
+}
+
+header img{
+    width: 250px;
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px 5px 10px;
+    font-size: 18px;
+}
+
+/* Logo flotante de Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp img{
+    width: 100px;
+}
+
+.footer-alternativo-fondo{
+    background-color: rgb(26, 50, 95);
+}
+
+/* Datos importantes (contacto telefónico, sede central, datos fiscales) */
+
+.alternativo-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+}
+
+.alternativo-contactos h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.alternativo-contactos p{
+    color: rgb(194, 194, 194);
+    font-size: 18px;
+    text-align: center;
+}
+
+.alternativo-datos-fiscales{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.alternativo-datos-fiscales h2{
+    padding-top: 23px;
+}
+
+/* Accesos directos a diversas partes de la plataforma */
+
+.alternativo-resumen-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.alternativo-resumen-links h2{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.alternativo-resumen-links a{
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-alternativo{
+    padding-top: 30px;
+}
+
+/* Logo y redes sociales */
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo-footer img{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.h2-redes-alternativo{
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.redes-sociales img{
+    width: 50px;
+}    
+
+/* Información sobre creación de web */
+
+.alternativo-creacion h2{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.alternativo-creacion p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/* Accesos directos */
+
+.accesos{
+    display: grid;
+    grid-auto-rows: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.accesos img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.accesos h3{
+    color:rgb(33, 18, 90);
+}
+
+.accesos-aplicativos{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+}
+
+.footer-profesionales{
+    padding-top: 30px;
+}
+
+.footer-acercade{
+    padding-top: 8px;
+}
+
+.footer-acces   os{
+    padding-top: 10px;
+}
+
+
+
+/*!――――――――――――――――――――INDEX――――――――――――――――――――*/
+
+/* Titulo principal */
+
+.titulo-index h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-index h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-index{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/Portada-Index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Información destacada (recuadros grises) */
+
+.destacados-index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.destacados-index div{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.destacados-index img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.destacados-index a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(33, 18, 90);
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.destacados-index h4{
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+}
+
+.destacados-index h3{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+/* Apartado para pacientes y profesionales */
+
+.info-index{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+}
+
+.info-index h3{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.info-pacientes{
+    background-image: url(../img/Informacion-Pacientes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-pacientes a{
+    color: white;
+}
+
+.info-profesionales{
+    background-image: url(../img/Informacion-Profesionales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-profesionales a{
+    color: white;
+}
+
+/* Acceso a apartados importantes PT.1 y PT.2 */
+
+.importantes-index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 30px;
+    background-color: rgb(26, 50, 95);
+}
+
+.importantes-index img{
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.importantes-index h3{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 5px;    
+}
+
+.importantes-index p{
+    color: rgb(161, 161, 161);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 200px;
+}
+
+.importantes-index div a{
+    color: white;
+    font-size: 15px;
+}
+
+/* Testimonios de pacientes */
+
+.testimonio-index{
+    background-image: url(../img/Historia-Pacientes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-index h2{
+    font-size: 40px; 
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.testimonio-index div a{
+    color: white;
+    font-size: 20px;
+}
+
+/* Acceso a turnos e historia del hospital */
+
+.nosotros-index{
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nosotros-index h2{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.turnos-index{
+    background-image: url(../img/Turnos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.turnos-index a{
+    color: white;
+}
+
+.historia-index{
+    background-image: url(../img/Historia-Hospital.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-index a{
+    color: white;
+}
+
+/* Ubicación del hospital (imagen con acceso a Google Maps) */
+
+.mapa{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr;
+}
+
+.mapa h2{
+    font-size: 30px;
+    color: rgb(190, 190, 190);
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
+}
+
+.mapa h3{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
+}
+
+.mapa{
+    background-image: url(../img/Mapa-Hospital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa a{
+    color: white;
+}
+
+.footer-index-fondo{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Datos importantes (contacto telefónico, sede central, datos fiscales) */
+
+.index-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(33, 18, 90);
+    padding-top: 30px;
+}
+
+.index-contactos h2{
+    color: rgb(33, 18, 90);
+    font-size: 30px;
+    text-align: center;
+}
+
+.index-contactos p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.index-datos-fiscales{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.index-datos-fiscales h2{
+    padding-top: 23px;
+}
+
+/* Accesos directos a diversas partes de la plataforma */
+
+.index-resumen-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(33, 18, 90);
+}
+
+.index-resumen-links h2{
+    color: rgb(33, 18, 90);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.index-resumen-links a{
+    color: rgb(33, 18, 90);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-pacientes{
+    padding-top: 30px;
+}
+
+/* Logo y redes sociales */
+
+.h2-redes{
+    width: 100%;
+    padding-top: 20px;
+    color: rgb(33, 18, 90);
+    text-align: center;
+}
+
+/* Información sobre creación de web */
+
+.index-creacion h2{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(33, 18, 90);
+}
+
+.index-creacion p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(33, 18, 90);
+    padding-bottom: 20px;
+}
+
+/*!――――――――――――――――――――PACIENTES――――――――――――――――――――*/
+
+/* Titulo principal */
+
+.titulo-pacientes h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-pacientes h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-pacientes{
+    background-image: url(../img/Portada-Pacientes.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-pacientes{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Texto Pacientes */
+
+.texto-pacientes{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.texto-pacientes{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.texto-pacientes h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.texto-pacientes p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+.texto-pacientes ol{
+    padding-bottom: 20px;
+}
+
+/* Pacientes */
+
+.whatsapp-pacientes{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp-pacientes img{
+    width: 100px;
+    height: 100px;
+}
+
+/*!――――――――――――――――――――PROFESIONALES――――――――――――――――――――*/
+
+.titulo-profesionales h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-profesionales h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-profesionales{
+    background-image: url(../img/Portada-Profesionales.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-profesionales{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Texto Profesionales */
+
+.texto-profesionales{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.texto-profesionales{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.texto-profesionales h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(26, 50, 95);
+}
+
+.texto-profesionales p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+/*!――――――――――――――――――――ACERCA DE CORAZON ABIERTO――――――――――――――――――――*/
+
+/* Titulo principal */
+
+.titulo-acercade h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-acercade h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-acercade{
+    background-image: url(../img/Portada-Acercade.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-acercade{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Accesos directos */
+
+.accesos-acercade{
+    display: grid;
+    grid-auto-rows: 1500px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.accesos-acercade img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.accesos-acercade h3{
+    color:rgb(33, 18, 90);
+}
+
+.accesos-aplicativos-acercade{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+/* Texto Acerca de Corazón Abierto */
+
+.texto-acercade{
+    grid-column: 2 / span 2;
+    padding-left: 50px;
+}
+
+.texto-acercade h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(26, 50, 95);
+}
+
+.texto-acercade p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+/*!――――――――――――――――――――MI CORAZON――――――――――――――――――――*/
+
+/* Titulo principal */
+
+.titulo-micorazon h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-micorazon h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-micorazon{
+    background-image: url(../img/Portada-MiCorazon.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-micorazon{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Accesos directos */
+
+.accesos-micorazon{
+    display: grid;
+    grid-auto-rows: 650px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.accesos-micorazon img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.accesos-micorazon h3{
+    color:rgb(33, 18, 90);
+}
+
+.accesos-aplicativos-micorazon{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+/* Texto Acerca de Corazón Abierto */
+
+.texto-micorazon{
+    grid-column: 2 / span 2;
+    padding-left: 50px;
+}
+
+.texto-micorazon h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(26, 50, 95);
+}
+
+.texto-micorazon p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+
+/*!――――――――――――――――――――GUARDIA 24HS――――――――――――――――――――*/
+
+/* Titulo principal */
+
+.titulo-guardia h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+}
+
+.titulo-guardia h2{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.7;
+}
+
+.titulo-guardia{
+    background-image: url(../img/Portada-Guardia.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-guardia{
+    background-color: rgb(230, 230, 230);
+}
+
+/* Accesos directos */
+
+.accesos-guardia{
+    display: grid;
+    grid-auto-rows: 650px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.accesos-guardia img{
+    padding-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.accesos-guardia h3{
+    color:rgb(33, 18, 90);
+}
+
+.accesos-aplicativos-guardia{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+}
+
+/* Texto Acerca de Corazón Abierto */
+
+.texto-guardia{
+    grid-column: 2 / span 2;
+    padding-left: 50px;
+}
+
+.texto-guardia h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(26, 50, 95);
+}
+
+.texto-guardia p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 590px){
+    header{
+        position: relative;
+    }
+
+    header nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    header img{
+        width: 300px;
+    }
+    
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    .titulo-index h1{
+        font-size: 50px;
+    }
+
+    .titulo-index h2{
+        font-size: 15px;
+    }
+
+    .importantes-index{
+        padding-bottom: 35px;
+    }
+
+    .info-index, .nosotros-index{
+        grid-template-columns: 1fr;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .index-datos-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .index-resumen-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    
+    header{
+        position: relative;
+    }
+    
+    header nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    
+    header{
+        position: relative;
+    }
+    
+    header img{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        position: relative;
+    }
+    
+    header img{
+        width: 300px;
+    }
+    
+    header nav ul li a{
+        font-size: 15px;
+    }
+
+    .titulo-index h1{
+        font-size: 50px;
+    }
+
+    .titulo-index h2{
+        font-size: 15px;
+    }
+
+    .importantes-index{
+        padding-bottom: 35px;
+    }
+
+    .info-index, .nosotros-index{
+        grid-template-columns: 1fr;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .index-datos-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .index-resumen-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 590px){
+    header{
+        position: relative;
+    }
+
+    header nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    header img{
+        width: 300px;
+    }
+    
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    .titulo-index h1{
+        font-size: 50px;
+    }
+
+    .titulo-index h2{
+        font-size: 15px;
+    }
+
+    .importantes-index{
+        padding-bottom: 35px;
+    }
+
+    .info-index, .nosotros-index{
+        grid-template-columns: 1fr;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .index-datos-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .index-resumen-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        position: relative;
+    }
+    
+    header img{
+        width: 300px;
+    }
+    
+    header nav ul li a{
+        font-size: 15px;
+    }
+
+    .titulo-index h1{
+        font-size: 50px;
+    }
+
+    .titulo-index h2{
+        font-size: 15px;
+    }
+
+    .importantes-index{
+        padding-bottom: 35px;
+    }
+
+    .info-index, .nosotros-index{
+        grid-template-columns: 1fr;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .index-datos-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .index-resumen-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+
+}
