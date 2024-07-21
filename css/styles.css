@@ -420,8 +420,9 @@ header nav ul li a{
 
 .nosotros-index{
     display: grid;
-    grid-template-rows: 450px;
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
 }
 
 .nosotros-index h2{
@@ -987,39 +988,27 @@ header nav ul li a{
     padding-right: 50px;
 }
 
+/**----------------RESPONSIVE----------------*/
 
 @media screen and (max-width: 1245px){
-    
-    header{
-        position: relative;
+
+    header img{
+        width: 200px;
     }
-    
+
     header nav ul li a{
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 1150px){
-    
+@media screen and (max-width: 1075px){
     header{
-        position: relative;
+        display: flex;
+        flex-direction: column;
     }
-    
-    header img{
-        width: 200px;
-    }
-    
 }
 
 @media screen and (max-width: 1000px){
-    header{
-        position: relative;
-    }
-    
-    header img{
-        width: 300px;
-    }
-    
     header nav ul li a{
         font-size: 15px;
     }
@@ -1036,17 +1025,63 @@ header nav ul li a{
         padding-bottom: 35px;
     }
 
+    .info-pacientes, .info-profesionales, .turnos-index, .historia-index{
+        height: 350px;
+    }
+
+    .info-profesionales, .historia-index{
+        border-top: 1px solid white;
+    }
+
     .info-index, .nosotros-index{
         grid-template-columns: 1fr;
     }
 
-    .index-contactos, .index-resumen-links, .logo-y-redes{
-        flex-wrap: wrap;
+    .importantes-index img{
+        width: 50px;
     }
 
-    .index-datos-fiscales{
-        border: none;
-        padding-bottom: 15px;
+    .importantes-index div a{
+        font-size: 12px;
+    }
+
+    .index-contactos h2{
+        font-size: 18px;
+    }
+
+    .index-contactos p{
+        font-size: 15px;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header{
+        position: relative;
+    }
+
+    header img{
+        width: 180px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    .titulo-index{
+        padding-top: 260px;
+        padding-bottom: 260px;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
     }
 
     .index-resumen-links{
@@ -1062,6 +1097,7 @@ header nav ul li a{
     .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
         list-style: none;
     }
+
     .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
         font-size: 18px;
     }
@@ -1076,7 +1112,6 @@ header nav ul li a{
     .footer-profesionales{
         padding-top: 0;
     }
-
 }
 
 @media screen and (max-width: 590px){
@@ -1091,7 +1126,7 @@ header nav ul li a{
     }
     
     header img{
-        width: 300px;
+        width: 250px;
     }
     
     header nav ul li a{
