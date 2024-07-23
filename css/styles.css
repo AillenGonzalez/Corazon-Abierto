@@ -218,7 +218,7 @@ header nav ul li a{
     padding-top: 8px;
 }
 
-.footer-acces   os{
+.footer-accesos{
     padding-top: 10px;
 }
 
@@ -360,7 +360,6 @@ header nav ul li a{
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: rgb(230, 230, 230);
     padding-bottom: 30px;
     background-color: rgb(26, 50, 95);
 }

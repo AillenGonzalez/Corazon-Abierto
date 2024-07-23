@@ -1,0 +1,586 @@
+/*!―――――――――――――――――――― ESTILOS GENERALES ――――――――――――――――――――*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/**―――――――――――――――――――― BARRA DE NAVEGACIÓN ――――――――――――――――――――*/
+
+header{
+    width: 100vw;
+    background-color: rgb(26, 50, 95);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header img{
+    width: 250px;
+    margin: 25px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/**―――――――――――――――――――― LOGO FLOTANTE WSP ――――――――――――――――――――*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp img{
+    width: 100px;
+}
+
+/**―――――――――――――――――――― FOOTER ALTERNATIVO ――――――――――――――――――――*/
+
+/*? Color de fondo del footer de páginas complementarias */
+
+.alternativo-footer{
+    background-color: rgb(26, 50, 95);
+}
+
+/*? Datos importantes (contacto, sede, fiscales) */
+
+.alternativo-contactos, .index-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.alternativo-contactos h2, .index-contactos h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.alternativo-contactos p, .index-contactos p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.alternativo-fiscales, .index-datos-fiscales{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*? Accesos directos a la plataforma */
+
+.alternativo-links{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.alternativo-links h2{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.alternativo-links a{
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.alternativo-links a:hover{
+    color: #fff;
+}
+
+/*? Logo y redes sociales */
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 300px;
+    padding: 20px;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redes-alt-h2{
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.redes-sociales img{
+    width: 50px;
+}
+
+/*? Creacion de la web */
+
+.alternativo-creacion h2, p{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.alternativo-creacion p{
+    padding-bottom: 20px;
+}
+
+/*? Accesos directos */
+
+.accesos{
+    display: grid;
+    grid-auto-rows: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-bottom: 1px solid #000;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.accesos img{
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+}
+
+.accesos h3{
+    color: rgb(33, 18, 90);
+}
+
+.accesos-aplicativos{
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid #000;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+}
+
+.footer-profesionales{
+    padding-top: 30px;
+}
+
+.footer-acercade{
+    padding-top: 8px;
+}
+
+.footer-accesos{
+    padding-top: 10px;
+}
+
+/*!―――――――――――――――――――― INDEX ――――――――――――――――――――*/
+
+/*? TItulo principal */
+
+.titulo-index{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Portada-Index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-index h1{
+    width: 100%;
+    font-size: 90px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+    text-align: center;
+}
+
+.titulo-index h2{
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+/*? Información destacada (recuadros grises) */
+
+.destacados-index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.destacados-index img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.destacados-index div{
+    padding: 20px;
+}
+
+.destacados-index a{
+    font-size: 13px;
+    color: rgb(33, 18, 90);
+    padding-top: 10px;
+}
+
+.destacados-index a:hover{
+    color: red;
+}
+
+.destacados-index h4{
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+}
+
+.destacados-index h3{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/*? Apartado para pacientes y profesionales */
+
+.info-index{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-index h2{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.info-pacientes a, .info-profesionales a{
+    color: rgb(224, 224, 224);
+}
+
+.info-pacientes a:hover, .info-profesionales a:hover{
+    color: #fff;
+}
+
+.info-pacientes{
+    background-image: url(../img/Informacion-Pacientes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-profesionales{
+    background-image: url(../img/Informacion-Profesionales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*? Acceso a apartados importantes PT.1 y PT.2 */
+
+.importantes-index{
+    background-color: rgb(26, 50, 95);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.importantes-index img{
+    width: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.importantes-index h3{
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.importantes-index p{
+    width: 200px;
+    color: rgb(161, 161, 161);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.importantes-index div a{
+    color: #fff;
+    font-size: 15px;
+}
+
+.importantes-index div a:hover{
+    color: red;
+}
+
+/*? Testimonios de pacientes */
+
+.testimonio-index{
+    background-image: url(../img/Historia-Pacientes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-index h2{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.testimonio-index a{
+    color: rgb(190, 190, 190);
+}
+
+.testimonio-index a:hover{
+    color: #fff;
+}
+
+/*? Acceso a turnos e historia del hospital */
+
+.nosotros-index{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+}
+
+.nosotros-index h2{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.turnos-index a, .historia-index a{
+    color: rgb(230, 230, 230);
+}
+
+.turnos-index a:hover, .historia-index a:hover{
+    color: #fff;
+}
+
+.turnos-index{
+    background-image: url(../img/Turnos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-index{
+    background-image: url(../img/Historia-Hospital.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*? Ubicación del hospital (imagen con acceso a Google Maps) */
+
+.mapa{
+    background-image: url(../img/Mapa-Hospital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.mapa h2{
+    font-size: 30px;
+    color: rgb(190, 190, 190);
+    text-shadow: 2px 2px 2px #000;
+}
+
+.mapa h3{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.mapa a{
+    color: rgb(190, 190, 190);
+}
+
+.mapa a:hover{
+    color: #fff;
+}
+
+/*? Footer */
+
+.footer-index-fondo{
+    background-color: rgb(230, 230, 230);
+}
+
+/*? Datos importantes (contacto, sede, fiscales) */
+
+.index-contactos{
+    border-bottom: 1px solid rgb(33, 18, 90);
+}
+
+.index-contactos h2{
+    color: rgb(33, 18, 90);
+}
+
+.index-contactos p{
+    color: rgb(33, 18, 90);
+}
+
+.index-datos-fiscales{
+    border-left: 1px solid rgb(33, 18, 90);
+    border-right: 1px solid rgb(33, 18, 90);
+}
+
+.index-datos-fiscales h2{
+    padding-top: 23px;
+}
+
+/*! PACIENTES */
+
+.alternativo-contactos{
+    border-bottom: 1px solid #fff;
+}
+
+.alternativo-contactos h2{
+    color: #fff;
+}
+
+.alternativo-contactos p{
+    color: rgb(194, 194, 194);
+}
+
+.alternativo-fiscales{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+/*? Accesos directos a diversas partes de la plataforma */
+
+.index-resumen-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(33, 18, 90);
+}
+
+.index-resumen-links h2{
+    color: rgb(33, 18, 90);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.index-resumen-links a{
+    font-size: 15px;
+    color: rgb(33, 18, 90);
+    text-decoration: none;
+}
+
+.index-resumen-links a:hover{
+    color: red;
+}
+
+.footer-pacientes{
+    padding-top: 30px;
+}
+
+/*? Logo y redes sociales */
+
+.redes-h2-index{
+    width: 100%;
+    padding-top: 20px;
+    color: rgb(33, 18, 90);
+    text-align: center;
+}
+
+/*? Información sobre la creación de la web */
+
+.index-creacion h2, p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(33, 18, 90);
+}
+
+.index-creacion p{
+    padding-bottom: 20px;
+}
