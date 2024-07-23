@@ -1,0 +1,229 @@
+/*!―――――――――――――――――――― ESTILOS GENERALES ――――――――――――――――――――*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/**―――――――――――――――――――― BARRA DE NAVEGACIÓN ――――――――――――――――――――*/
+
+header{
+    width: 100vw;
+    background-color: rgb(26, 50, 95);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header img{
+    width: 250px;
+    margin: 25px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/** TITULO */
+
+.titulo-index h1, .titulo-pacientes h1{
+    width: 100%;
+    font-size: 90px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(33, 18, 90);
+    text-align: center;
+}
+
+.titulo-index h2, .titulo-pacientes h2{
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+/**―――――――――――――――――――― LOGO FLOTANTE WSP ――――――――――――――――――――*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.whatsapp img{
+    width: 100px;
+}
+
+/**―――――――――――――――――――― FOOTER ALTERNATIVO ――――――――――――――――――――*/
+
+/*? Color de fondo del footer de páginas complementarias */
+
+.alternativo-footer{
+    background-color: rgb(26, 50, 95);
+}
+
+/*? Datos importantes (contacto, sede, fiscales) */
+
+.alternativo-contactos, .index-contactos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.alternativo-contactos h2, .index-contactos h2{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.alternativo-contactos p, .index-contactos p{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(194, 194, 194);
+}
+
+.alternativo-fiscales, .index-datos-fiscales{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+/*? Accesos directos a la plataforma */
+
+.alternativo-links{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.alternativo-links h2{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.alternativo-links a{
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.alternativo-links a:hover{
+    color: red;
+}
+
+/*? Logo y redes sociales */
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 300px;
+    padding: 20px;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redes-alt-h2{
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.redes-sociales img{
+    width: 50px;
+}
+
+/*? Creacion de la web */
+
+.alternativo-creacion h2, p{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.alternativo-creacion p{
+    padding-bottom: 20px;
+}
+
+/*? Accesos directos */
+
+.accesos{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.accesos img{
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+}
+
+.accesos h3{
+    color: rgb(33, 18, 90);
+}
+
+.accesos-aplicativos{
+    height: 90%;
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid #000;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+    color: rgb(33, 18, 90);
+}
+
+.footer-profesionales{
+    padding-top: 30px;
+}
+
+.footer-acercade{
+    padding-top: 8px;
+}
+
+.footer-accesos{
+    padding-top: 10px;
+}
