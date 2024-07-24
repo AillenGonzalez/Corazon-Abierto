@@ -116,7 +116,7 @@ header a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #fff;
 }
 
@@ -134,6 +134,10 @@ header a{
 
 .alternativo-links a:hover{
     color: red;
+}
+
+.footer-pacientes{
+    padding-top: 30px;
 }
 
 /*? Logo y redes sociales */
@@ -157,7 +161,7 @@ header a{
 }
 
 .redes-alt-h2{
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
     color: #fff;
     text-align: center;
@@ -214,6 +218,10 @@ header a{
 .accesos-aplicativos p{
     text-align: center;
     color: rgb(33, 18, 90);
+}
+
+.accesos-aplicativos a:hover{
+    color: red;
 }
 
 .footer-profesionales{

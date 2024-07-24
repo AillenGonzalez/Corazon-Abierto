@@ -295,8 +295,6 @@
     padding-top: 23px;
 }
 
-/*! PACIENTES */
-
 .alternativo-contactos{
     border-bottom: 1px solid #fff;
 }
@@ -340,10 +338,6 @@
     color: red;
 }
 
-.footer-pacientes{
-    padding-top: 30px;
-}
-
 /*? Logo y redes sociales */
 
 .redes-h2-index{
@@ -352,6 +346,43 @@
     color: rgb(33, 18, 90);
     text-align: center;
 }
+
+.facebook{
+    transition: transform 0.3s ease;
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+    content: url(../img/Link-Facebook-Alternativo.png);
+}
+
+.instagram{
+    transition:  transform 0.3s ease;
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+    content: url(../img/Link-Instagram-Alternativo.png);
+}
+
+.twitter{
+    transition:  transform 0.3s ease;
+}
+
+.twitter:hover{
+    transform: scale(1.1);
+    content: url(../img/Link-Twitter-Alternativo.png);
+}
+
+.youtube{
+    transition:  transform 0.3s ease;
+}
+
+.youtube:hover{
+    transform: scale(1.1);
+    content: url(../img/Link-Youtube-Alternativo.png);
+}
+
 
 /*? Información sobre la creación de la web */
 
