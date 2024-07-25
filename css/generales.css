@@ -40,9 +40,23 @@ header a{
     color: #fff;
 }
 
-/** TITULO */
+/**―――――――――――――――――――― TITULO ――――――――――――――――――――*/
 
-.titulo-index h1, .titulo-pacientes h1{
+.titulo-index, .titulo-pacientes, .titulo-profesionales, .titulo-acerca, .titulo-micorazon{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-index h1, .titulo-pacientes h1, .titulo-profesionales h1, .titulo-acerca h1, .titulo-micorazon h1{
     width: 100%;
     font-size: 90px;
     color: #fff;
@@ -50,13 +64,57 @@ header a{
     text-align: center;
 }
 
-.titulo-index h2, .titulo-pacientes h2{
+.titulo-index h2, .titulo-pacientes h2, .titulo-profesionales h2, .titulo-acerca h2, .titulo-micorazon h2{
     width: 100%;
     font-size: 20px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
     opacity: 0.7;
     text-align: center;
+}
+
+/** MAIN ALTERNATIVO */
+
+.main-alternativo{
+    background-color: rgb(230, 230, 230);
+}
+
+/**―――――――――――――――――――― TEXTO MAIN ALTERNATIVOS ――――――――――――――――――――**/
+
+.titulo-logo-alternativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(33, 18, 90);
+}
+
+.titulo-logo-alternativo h2{
+    font-size: 80px;
+    letter-spacing: .5px;
+}
+
+.titulo-logo-alternativo h3{
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.texto-pacientes, .texto-profesionales{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.texto-pacientes p, .texto-profesionales p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px;
+    width: 95%;
+    color: rgb(33, 18, 90);
 }
 
 /**―――――――――――――――――――― LOGO FLOTANTE WSP ――――――――――――――――――――*/

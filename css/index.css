@@ -4,18 +4,7 @@
 /*? TItulo principal */
 
 .titulo-index{
-    width: 100%;
-    height: 100%;
     background-image: url(../img/Portada-Index.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 360px;
-    padding-bottom: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /*? Información destacada (recuadros grises) */
