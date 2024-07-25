@@ -86,6 +86,7 @@ header a{
     flex-direction: row;
     align-items: center;
     color: rgb(33, 18, 90);
+    padding-bottom: 30px;
 }
 
 .titulo-logo-alternativo h2{
@@ -98,7 +99,7 @@ header a{
     padding-left: 10px;
 }
 
-.texto-pacientes, .texto-profesionales{
+.texto-pacientes, .texto-profesionales, .texto-acerca{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -109,7 +110,7 @@ header a{
     align-items: center;
 }
 
-.texto-pacientes p, .texto-profesionales p{
+.texto-pacientes p, .texto-profesionales p, .texto-acerca p{
     font-size: 15px;
     text-align: justify;
     margin: 10px;
