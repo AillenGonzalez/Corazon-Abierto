@@ -42,7 +42,7 @@ header a{
 
 /**―――――――――――――――――――― TITULO ――――――――――――――――――――*/
 
-.titulo-index, .titulo-pacientes, .titulo-profesionales, .titulo-acerca, .titulo-micorazon{
+.titulo-index, .titulo-pacientes, .titulo-profesionales, .titulo-acerca, .titulo-micorazon, .titulo-portal-profesionales, .titulo-guardia{
     width: 100%;
     height: 100%;
     background-position: center;
@@ -56,7 +56,7 @@ header a{
     align-items: center;
 }
 
-.titulo-index h1, .titulo-pacientes h1, .titulo-profesionales h1, .titulo-acerca h1, .titulo-micorazon h1{
+.titulo-index h1, .titulo-pacientes h1, .titulo-profesionales h1, .titulo-acerca h1, .titulo-micorazon h1, .titulo-portal-profesionales h1, .titulo-guardia h1{
     width: 100%;
     font-size: 90px;
     color: #fff;
@@ -64,7 +64,7 @@ header a{
     text-align: center;
 }
 
-.titulo-index h2, .titulo-pacientes h2, .titulo-profesionales h2, .titulo-acerca h2, .titulo-micorazon h2{
+.titulo-index h2, .titulo-pacientes h2, .titulo-profesionales h2, .titulo-acerca h2, .titulo-micorazon h2, .titulo-portal-profesionales h2, .titulo-guardia h2{
     width: 100%;
     font-size: 20px;
     color: #fff;
@@ -73,11 +73,98 @@ header a{
     text-align: center;
 }
 
-/** MAIN ALTERNATIVO */
+/** ―――――――――――――――――――― MAIN ALTERNATIVO ――――――――――――――――――――*/
 
 .main-alternativo{
     background-color: rgb(230, 230, 230);
 }
+
+/**―――――――――――――――――――― ACCESOS ALTERNATIVOS ――――――――――――――――――――**/
+
+.accesos{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.accesos img{
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+}
+
+.accesos h3{
+    color: rgb(33, 18, 90);
+}
+
+.accesos-aplicativos{
+    height: 90%;
+    display: grid;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-right: 1px solid #000;
+}
+
+.accesos-aplicativos p{
+    text-align: center;
+    color: rgb(33, 18, 90);
+}
+
+.accesos-aplicativos a:hover{
+    color: red;
+}
+
+/**―――――――――――――――――――― ACCESOS GUARDIA ――――――――――――――――――――**/
+
+.accesos-guardia{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.accesos-guardia img{
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.accesos-guardia h3{
+    color: rgb(33, 18, 90);
+    padding-bottom: 10px;
+}
+
+.accesos-guardia p{
+    color: rgb(33, 18, 90);
+    padding-bottom: 15px;
+}
+
+.accesos-aplicativos a:hover{
+    color: red;
+}
+
+.accesos-aplicativos-guardia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+
+.contactos-guardia{
+    padding-top: 35px;
+    text-align: center;
+}
+
 
 /**―――――――――――――――――――― TEXTO MAIN ALTERNATIVOS ――――――――――――――――――――**/
 
@@ -99,24 +186,134 @@ header a{
     padding-left: 10px;
 }
 
-.texto-pacientes, .texto-profesionales, .texto-acerca{
+.texto-pacientes, .texto-profesionales, .texto-acerca, .texto-apps, .texto-guardia{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     grid-column-start: 2;
     grid-column-end: 4;
     padding-left: 50px;
-    align-items: center;
+    align-items: start;
 }
 
-.texto-pacientes p, .texto-profesionales p, .texto-acerca p{
+.texto-apps h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto-pacientes p, .texto-profesionales p, .texto-acerca p, .texto-apps p, .texto-guardia p{
     font-size: 15px;
     text-align: justify;
     margin: 10px;
     width: 95%;
     color: rgb(33, 18, 90);
 }
+
+/**―――――――――――――――――――― FORMULARIO MI CORAZON ――――――――――――――――――――**/
+
+.accesos-apps{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.accesos-apps img{
+    width: 400px;
+    height: 130px;
+    padding-top: 50px;
+}
+
+.formulario-apps{
+    border-right: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-apps form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-apps img{
+    padding-bottom: 60px;
+}
+
+.formulario-apps h3{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.formulario-apps h4{
+    color: rgb(33, 18, 90);
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.formulario-apps h5{
+    color: rgb(33, 18, 90);
+    font-size: 16px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.formulario-apps h6{
+    color: rgb(33, 18, 90);
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.formulario-apps a{
+    color: rgb(71, 101, 156);
+}
+
+.formulario-apps a:hover{
+    color: rgb(216, 57, 57);
+}
+
+.formulario-apps input{
+    width: 55%;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.formulario-apps p{
+    color: rgb(33, 18, 90);
+    font-size: 12px;
+    padding-top: 50px;
+    width: 70%;
+}
+
+.formulario-apps button{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    background-color: rgb(26, 50, 95);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    transition: transform 0.1s ease;
+}
+
+.formulario-apps button:hover{
+    transform: scale(1.1);
+    background-color: rgb(71, 101, 156);
+    color: #fff;
+    border: 1px solid rgb(26, 50, 95);
+    box-shadow: 1px 1px black;
+}
+
 
 /**―――――――――――――――――――― LOGO FLOTANTE WSP ――――――――――――――――――――*/
 
@@ -240,47 +437,6 @@ header a{
 
 .alternativo-creacion p{
     padding-bottom: 20px;
-}
-
-/*? Accesos directos */
-
-.accesos{
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid #000;
-    align-content: center;
-    justify-content: center;
-    padding: 50px;
-}
-
-.accesos img{
-    width: 50px;
-    height: 50px;
-    padding-top: 50px;
-}
-
-.accesos h3{
-    color: rgb(33, 18, 90);
-}
-
-.accesos-aplicativos{
-    height: 90%;
-    display: grid;
-    text-align: center;
-    padding-right: 20px;
-    padding-left: 50px;
-    padding-bottom: 10px;
-    border-right: 1px solid #000;
-}
-
-.accesos-aplicativos p{
-    text-align: center;
-    color: rgb(33, 18, 90);
-}
-
-.accesos-aplicativos a:hover{
-    color: red;
 }
 
 .footer-profesionales{
