@@ -384,3 +384,171 @@
 .index-creacion p{
     padding-bottom: 20px;
 }
+
+/**_________ RESPONSIVE _______*/
+
+@media (max-width: 1130px){
+    header img{
+        width: 200px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 940px){
+    header{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header img{
+        width: 150px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+    
+    .menu-horizontal li a{
+        padding: 2px 5px 15px;
+    }
+
+    .menu-vertical{
+        width: 150px;
+    }
+
+    .menu-vertical li a{
+        padding: 5px 5px 5px 10px;
+        font-size: 10px;
+    }
+
+    .titulo-index h1{
+        font-size: 50px;
+    }
+
+    .titulo-index h2{
+        font-size: 15px;
+    }
+
+    .titulo-index{
+        background-position: left;
+    }
+
+    .destacados-index img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .destacados-index h4{
+        font-size: 10px;
+    }
+
+    .destacados-index h3{
+        font-size: 12px;
+    }
+
+    .destacados-index a{
+        font-size: 10px;
+    }
+
+    .info-index h2, .nosotros-index h2, .testimonio-index h2{
+        font-size: 30px;
+    }
+
+    .info-index a, .nosotros-index a, .testimonio-index a{
+        font-size: 13px;
+    }
+
+    .info-pacientes, .info-profesionales, .turnos-index, .historia-index, .testimonio-index{
+        height: 300px;
+    }
+
+    .importantes-index img{
+        width: 50px;
+    }
+
+    .importantes-index h3{
+        font-size: 12px;
+    }
+    
+    .importantes-index p{
+        font-size: 11px;
+    }
+
+    .importantes-index div a{
+        font-size: 12px;
+    }
+
+    .mapa{
+        height: 400px;
+    }
+
+    .mapa h2{
+        font-size: 15px;
+    }
+
+    .mapa h3{
+        font-size: 35px;
+    }
+
+    .mapa a{
+        font-size: 15px;
+    }
+
+    .info-index, .nosotros-index{
+        grid-template-columns: 1fr;
+    }
+
+    .index-contactos, .index-resumen-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .index-contactos h2{
+        font-size: 20px;
+    }
+
+    .index-contactos p{
+        font-size: 14px;
+    }
+
+    .index-datos-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .index-resumen-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+
+    .index-creacion{
+        padding-top: 30px;
+    }
+}

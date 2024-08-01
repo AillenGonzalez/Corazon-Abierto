@@ -10,22 +10,53 @@
 </head>
 
 <body>
-    
+
     <header>
 
         <!--―――――――――――――――――――― Barra de Navegación ――――――――――――――――――――-->
 
         <img src="./img/Logo-Header.png">
         <nav>
-            <ul>
+            <ul class="menu-horizontal">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/pacientes.html">Pacientes</a></li>
-                <li><a href="./pages/profesionales.html">Profesionales</a></li>
-                <li><a href="./pages/acerca.html">Acerca de Corazón Abierto</a></li>
-                <li><a href="./pages/micorazon.html">Mi Corazón</a></li>
+                <li>
+                    <a href="./pages/pacientes.html">Pacientes</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Coberturas</a></li>
+                        <li><a href="#">Consultorio Virtual</a></li>
+                        <li><a href="#">Educación para Pacientes</a></li>
+                        <li><a href="#">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./pages/profesionales.html">Profesionales</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Derivar un Paciente</a></li>
+                        <li><a href="#">Material Educativo</a></li>
+                        <li><a href="#">Cursos y Congresos</a></li>
+                        <li><a href="#">Staff Médico</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                    <ul class="menu-vertical">
+                        <li><a href="./pages/acerca.html">Nuestra Historia</a></li>
+                        <li><a href="#">Sedes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Pertenecé a Corazón Abierto</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Aplicativos</a>
+                    <ul class="menu-vertical">
+                        <li><a href="./pages/micorazon.html">Mi Corazón</a></li>
+                        <li><a href="./pages/portal-profesionales.html">Cuidando Corazones</a></li>
+                    </ul>
+                </li>
                 <li><a href="./pages/guardia.html">Guardia 24hs</a></li>
             </ul>
-        </nav>        
+        </nav>
+
     </header>
 
     <main>
@@ -34,8 +65,8 @@
 
         <section class="titulo-index">
             <h1>Corazón Abierto</h1>
-            <h2>― Especialistas en afecciones cardiovasculares ―</h2>  
-        </section>            
+            <h2>― Especialistas en afecciones cardiovasculares ―</h2>
+        </section>
 
         <!--―――――――――――――――――――― Información destacada ――――――――――――――――――――-->
 
@@ -45,35 +76,35 @@
                 <img src="./img/Folleto-EncuentroPacientes.jpg">
                 <h4>COMITÉ DE PACIENTES</h4>
                 <h3>Encuentro entre pacientes</h3>
-                <a href="">Ver</a>
+                <a href="./pages/pacientes.html">Ver</a>
             </div>
 
             <div>
                 <img src="./img/Folleto-Farmacias.jpg">
                 <h4>NOVEDADES</h4>
                 <h3>Farmacias</h3>
-                <a href="">Ver</a>
+                <a href="./pages/acerca.html">Ver</a>
             </div>
 
             <div>
                 <img src="./img/Folleto-CharlasComunidad.jpg">
                 <h4>CHARLAS Y CURSOS</h4>
                 <h3>Charlas a la Comunidad</h3>
-                <a href="">Ver</a>
+                <a href="./pages/pacientes.html">Ver</a>
             </div>
 
             <div>
                 <img src="./img/Folleto-Visitas.jpg">
                 <h4>NOVEDADES</h4>
                 <h3>Horarios de Visitas</h3>
-                <a href="">Ver</a>
+                <a href="./pages/acerca.html">Ver</a>
             </div>
 
             <div>
                 <img src="./img/Folleto-Anticuagulacion.jpg">
                 <h4>SERVICIOS COMPLEMENTARIOS</h4>
                 <h3>Clínica de Anticoagulación</h3>
-                <a href="">Ver</a>
+                <a href="./pages/acerca.html">Ver</a>
             </div>
 
         </section>
@@ -84,7 +115,7 @@
 
             <div class="info-pacientes">
                 <h2>Pacientes</h2>
-                <a href="./pages/pacientes.html">Información para pacientes</a>                
+                <a href="./pages/pacientes.html">Información para pacientes</a>
             </div>
 
             <div class="info-profesionales">
@@ -123,7 +154,7 @@
                 <img src="./img/Logo-CV.png">
                 <h3>Partenecé a C.A</h3>
                 <p>Si querés sumarte a nuestro equipo, envianos tu postulación</p>
-                <a href="">Sumate a CA</a>
+                <a href="./pages/acerca.html">Sumate a CA</a>
             </div>
 
         </section>
@@ -248,42 +279,42 @@
             <div class="footer-pacientes">
                 <h2>Pacientes</h2>
                 <ul>
-                    <li><a href="">Mi Corazón</a></li>
-                    <li><a href="">Coberturas</a></li>
-                    <li><a href="">Consultorio Virtual</a></li>
-                    <li><a href="">Educación para Pacientes</a></li>
-                    <li><a href="">Testimonios</a></li>
+                    <li><a href="./pages/micorazon.html">Mi Corazón</a></li>
+                    <li><a href="./pages/pacientes.html">Coberturas</a></li>
+                    <li><a href="./pages/micorazon.html">Consultorio Virtual</a></li>
+                    <li><a href="./pages/pacientes.html">Educación para Pacientes</a></li>
+                    <li><a href="./pages/pacientes.html">Testimonios</a></li>
                 </ul>
             </div>
 
             <div class="footer-profesionales">
                 <h2>Profesionales</h2>
                 <ul>
-                    <li><a href="">Derivar a un paciente</a></li>
-                    <li><a href="">Portal de Profesionales</a></li>
-                    <li><a href="">Material Educativo</a></li>
-                    <li><a href="">Cursos y Congresos</a></li>
-                    <li><a href="">Staff médico</a></li>
+                    <li><a href="./pages/profesionales.html">Derivar a un paciente</a></li>
+                    <li><a href="./pages/profesionales.html">Portal de Profesionales</a></li>
+                    <li><a href="./pages/profesionales.html">Material Educativo</a></li>
+                    <li><a href="./pages/profesionales.html">Cursos y Congresos</a></li>
+                    <li><a href="./pages/profesionales.html">Staff médico</a></li>
                 </ul>
             </div>
 
             <div class="footer-acercade">
                 <h2>Acerca de C.A</h2>
                 <ul>
-                    <li><a href="">Sedes</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Nuestra historia</a></li>
-                    <li><a href="">Pertenecé a Corazón Abierto</a></li>
+                    <li><a href="./pages/acerca.html">Sedes</a></li>
+                    <li><a href="./pages/acerca.html">Contacto</a></li>
+                    <li><a href="./pages/acerca.html">Nuestra historia</a></li>
+                    <li><a href="./pages/acerca.html">Pertenecé a Corazón Abierto</a></li>
                 </ul>
             </div>
 
             <div class="footer-accesos">
                 <h2>Accesos</h2>
                 <ul>
-                    <li><a href="">Turnos</a></li>
-                    <li><a href="">Sedes</a></li>
-                    <li><a href="">Guardia 24hs</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="./pages/micorazon.html">Turnos</a></li>
+                    <li><a href="./pages/acerca.html">Sedes</a></li>
+                    <li><a href="./pages/guardia.html">Guardia 24hs</a></li>
+                    <li><a href="./pages/acerca.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -292,7 +323,7 @@
         <!--―――――――――――――――――――― Logo y redes sociales ――――――――――――――――――――-->
 
         <section class="logo-y-redes">
-            
+
             <div class="logo-footer">
                 <img src="./img/Logo-Footer.png">
             </div>

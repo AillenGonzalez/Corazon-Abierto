@@ -31,13 +31,39 @@ header img{
 header nav ul{
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 15px;
     margin-right: 25px;
 }
 
-header a{
-    text-decoration: none;
+.menu-horizontal li a{
+    display: block;
+    padding: 10px 15px;
     color: #fff;
+    text-decoration: none;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    background-color: rgba(26, 50, 95, 0.921);
+}
+
+.menu-vertical li:hover{
+    background-color: rgb(199, 1, 1);
+    transition: background-color 0.5s ease;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: #fff;
+    padding: 15px 15px 15px 20px;
+    font-size: 13px;
 }
 
 /**―――――――――――――――――――― TITULO ――――――――――――――――――――*/
@@ -67,6 +93,33 @@ header a{
 .titulo-index h2, .titulo-pacientes h2, .titulo-profesionales h2, .titulo-acerca h2, .titulo-micorazon h2, .titulo-portal-profesionales h2, .titulo-guardia h2{
     width: 100%;
     font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.titulo-registro-pacientes{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.titulo-registro-pacientes h1{
+    width: 100%;
+    font-size: 45px;
+    color: rgb(26, 50, 96);
+    text-shadow: 2px 2px 2px #27272779;
+    text-align: center;
+}
+
+.titulo-registro-pacientes h2{
+    width: 100%;
+    font-size: 15px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
     opacity: 0.7;
@@ -103,7 +156,8 @@ header a{
 
 .accesos-aplicativos{
     height: 90%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-right: 20px;
     padding-left: 50px;
@@ -284,6 +338,8 @@ header a{
     font-size: 15px;
     padding: 5px;
     border: 1px solid #fff;
+    border-radius: 8px;
+    outline: none;
 }
 
 .formulario-apps p{
@@ -363,6 +419,10 @@ header a{
     padding-right: 50px;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
+}
+
+.alternativo-fiscales h2{
+    padding-top: 23px;
 }
 
 /*? Accesos directos a la plataforma */
@@ -449,4 +509,253 @@ header a{
 
 .footer-accesos{
     padding-top: 10px;
+}
+
+/**―――――――――――――――――――― RESPONSIVE ALTERNATIVO ――――――――――――――――――――*/
+
+@media (max-width: 1130px){
+
+/*? NAV */
+
+    header img{
+        width: 200px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 940px){
+
+/*? NAV */
+
+    header{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    header img{
+        width: 150px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+    
+    .menu-horizontal li a{
+        padding: 2px 5px 15px;
+    }
+
+    .menu-vertical{
+        width: 150px;
+    }
+
+    .menu-vertical li a{
+        padding: 5px 5px 5px 10px;
+        font-size: 10px;
+    }
+
+/*? Titulo */
+
+    .titulo-pacientes h1, .titulo-profesionales h1, .titulo-acerca h1, .titulo-guardia h1, .titulo-micorazon h1, .titulo-portal-profesionales h1{
+        font-size: 50px;
+    }
+
+    .titulo-pacientes h2, .titulo-profesionales h2, .titulo-acerca h2, .titulo-guardia h2, .titulo-micorazon h2, .titulo-portal-profesionales h2{
+        font-size: 15px;
+    }
+
+    .titulo-micorazon{
+        background-position: right;
+    }
+
+    .titulo-logo-alternativo h2{
+        font-size: 30px;
+        display: none;
+    }
+
+    .titulo-logo-alternativo h3{
+        font-size: 10px;
+        display: none;
+    }
+
+/*? Accesos rápidos páginas alternativas */
+
+    .accesos{
+        padding-top: 10px;
+    }
+
+    .accesos-aplicativos, .accesos-aplicativos-guardia, .formulario-apps{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        border-right: none;
+        padding-left: 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #000;
+    }
+
+    .accesos-apps{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #000;
+    }
+
+    .accesos-aplicativos-guardia, .formulario-apps{
+        padding-right: 0;
+    }
+
+    .formulario-apps div, .accesos-aplicativos div{
+        width: 40%;
+    }
+
+    .accesos-aplicativos-guardia div{
+        width: 60%;
+    }
+
+    .accesos-aplicativos img, .accesos-aplicativos-guardia img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .accesos-aplicativos-guardia img, .formulario-apps img{
+        padding-top: 0;
+    }
+
+    .accesos-aplicativos h3, .accesos-aplicativos-guardia h3{
+        font-size: 15px;
+    }
+
+    .accesos-aplicativos p, .accesos-aplicativos-guardia p{
+        font-size: 12px;
+    }
+    
+    .accesos-aplicativos a, .accesos-aplicativos-guardia a{
+        font-size: 13px;
+    }
+
+    .contactos-guardia{
+        padding-top: 5px;
+    }
+
+    .formulario-apps img{
+        width: 250px;
+        height: 80px;
+        padding-bottom: 20px;
+    }
+
+    .formulario-apps{
+        border-bottom: 1px solid #000;
+    }
+
+    .formulario-apps h4{
+        font-size: 12px;
+    }
+
+    .formulario-apps h5{
+        font-size: 12px;
+        padding-top: 25px;
+    }
+    
+    .formulario-apps h6{
+        font-size: 10px;
+    }
+    
+    .formulario-apps p{
+        padding-top: 25px;
+        font-size: 12px;
+    }
+
+    .formulario-apps h3{
+        padding-top: 25px;
+        font-size: 11px;
+    }
+
+/*? Texto alternativo */
+
+    .texto-pacientes, .texto-profesionales, .texto-acerca, .texto-guardia, .texto-apps{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding-left: 0;
+    }
+
+    .texto-pacientes p, .texto-profesionales p, .texto-acerca p, .texto-guardia p, .texto-apps p{
+        font-size: 12px;
+    }
+
+    .texto-apps p:first-child{
+        padding-top: 30px;
+    }
+    
+    .texto-apps h3{
+        padding-left: 10px;
+    }
+
+/*? Footer */
+
+    .alternativo-contactos, .alternativo-links, .logo-y-redes{
+        flex-wrap: wrap;
+    }
+
+    .alternativo-contactos h2{
+        font-size: 20px;
+    }
+
+    .alternativo-contactos p{
+        font-size: 14px;
+    }
+
+    .alternativo-fiscales{
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .alternativo-links{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-pacientes li a, .footer-profesionales li a, .footer-accesos li a, .footer-acercade li a{
+        font-size: 12px;
+    }
+
+    .footer-pacientes li, .footer-profesionales li, .footer-accesos li, .footer-acercade li{
+        list-style: none;
+    }
+
+    .footer-pacientes h2, .footer-profesionales h2, .footer-accesos h2, .footer-acercade h2{
+        font-size: 18px;
+    }
+
+    .footer-pacientes, .footer-profesionales, .footer-acercade, .footer-accesos{
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-profesionales{
+        padding-top: 0;
+    }
+
+    .alternativo-creacion{
+        padding-top: 30px;
+    }
+
 }
