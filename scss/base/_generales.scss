@@ -1,0 +1,494 @@
+/*!―――――――――――――――――――― ESTILOS GENERALES ――――――――――――――――――――*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/**―――――――――――――――――――― BARRA DE NAVEGACIÓN ――――――――――――――――――――*/
+
+header{
+    width: 100vw;
+    background-color: rgb(26, 50, 95);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    img{
+        width: 250px;
+        margin: 25px;
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin-right: 25px;
+        }
+        .menu-horizontal{
+            li{
+                .menu-vertical{
+                    position: absolute;
+                    display: none;
+                    list-style: none;
+                    width: 200px;
+                    li{
+                        a{
+                            display: block;
+                            color: #fff;
+                            padding: 15px 15px 15px 20px;
+                            font-size: 13px;
+                        }
+                        &:hover{
+                            background-color: rgb(199, 1, 1);
+                            transition: background-color 0.5s ease;
+                        }
+                    }
+                }
+                &:hover .menu-vertical{
+                    display: block;
+                    background-color: rgba(26, 50, 95, 0.921);
+                }
+                a{
+                    display: block;
+                    padding: 10px 15px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/**―――――――――――――――――――― TITULOS ――――――――――――――――――――*/
+
+.titulo-index, .titulo-pacientes, .titulo-profesionales, .titulo-acerca, .titulo-micorazon, .titulo-portal-profesionales, .titulo-guardia{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        width: 100%;
+        font-size: 90px;
+        color: #fff;
+        text-shadow: 2px 2px 2px rgb(33, 18, 90);
+        text-align: center;
+    }
+    h2{
+        width: 100%;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 2px 2px 2px #000;
+        opacity: 0.7;
+        text-align: center;
+    }
+}
+
+/** ―――――――――――――――――――― MAIN ALTERNATIVO ――――――――――――――――――――*/
+
+.main-alternativo{
+    background-color: rgb(230, 230, 230);
+}
+
+/**―――――――――――――――――――― TEXTO MAIN ALTERNATIVOS ――――――――――――――――――――**/
+
+.texto-pacientes, .texto-profesionales, .texto-acerca, .texto-apps, .texto-guardia{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 50px;
+    align-items: start;
+    .titulo-logo-alternativo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(33, 18, 90);
+        padding-bottom: 30px;
+        h2{
+            font-size: 80px;
+            letter-spacing: .5px;
+        }
+        h3{
+            font-size: 24px;
+            padding-left: 10px;
+        }
+    }
+    p{
+        font-size: 15px;
+        text-align: justify;
+        margin: 10px;
+        width: 95%;
+        color: rgb(33, 18, 90);
+    }
+}
+
+.texto-apps{
+    h3{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/**―――――――――――――――――――― ACCESOS ALTERNATIVOS ――――――――――――――――――――**/
+
+.accesos{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    .accesos-aplicativos{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        border-right: 1px solid #000;
+        div{
+            p{
+                text-align: center;
+                color: rgb(33, 18, 90);
+                img{
+                    width: 50px;
+                    height: 50px;
+                    padding-top: 50px;
+                }
+            }
+            h3{
+                color: rgb(33, 18, 90);
+            }
+            a{
+                &:hover{
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+}
+
+/**―――――――――――――――――――― ACCESOS GUARDIA ――――――――――――――――――――**/
+
+.accesos-guardia{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    .accesos-aplicativos-guardia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid black;
+        padding-right: 50px;
+        div{
+            p{
+                color: rgb(33, 18, 90);
+                padding-bottom: 15px;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    padding-top: 50px;
+                }
+            }
+            h3{
+                color: rgb(33, 18, 90);
+                padding-bottom: 10px;
+            }
+        }
+        .contactos-guardia{
+            padding-top: 35px;
+            text-align: center;
+        }
+    }
+}
+
+/**―――――――――――――――――――― FORMULARIOS APPS ――――――――――――――――――――**/
+
+.accesos-apps{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #000;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    .formulario-apps{
+        border-right: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 400px;
+            height: 130px;
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                color: rgb(71, 101, 156);
+                &:hover{
+                    color: #ff0000;
+                }
+            }
+            p{
+                color: rgb(33, 18, 90);
+                font-size: 12px;
+                padding-top: 50px;
+                width: 70%;
+            }
+            h3{
+                font-size: 12px;
+                text-align: center;
+                padding-top: 50px;
+            }
+            h4{
+                color: rgb(33, 18, 90);
+                font-size: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            h5{
+                color: rgb(33, 18, 90);
+                font-size: 16px;
+                padding-top: 60px;
+                text-align: center;
+            }
+            h6{
+                color: rgb(33, 18, 90);
+                font-size: 12px;
+                padding-top: 10px;
+                text-align: center;
+            }
+            input{
+                width: 55%;
+                font-size: 15px;
+                padding: 5px;
+                border: 1px solid #fff;
+                border-radius: 8px;
+                outline: none;
+            }
+            button{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 15px;
+                background-color: rgb(26, 50, 95);
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                transition: transform 0.1s ease;
+                &:hover{
+                    transform: scale(1.0);
+                    background-color: rgb(71, 101, 156);
+                    color: #fff;
+                    border: 1px solid rgb(26, 50, 95);
+                    box-shadow: 1px 1px black;
+                }
+            }
+        }
+    }
+}
+
+/**―――――――――――――――――――― LOGO FLOTANTE WSP ――――――――――――――――――――*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    img{
+        width: 100px;
+    }
+}
+
+/**―――――――――――――――――――― FOOTER ALTERNATIVO ――――――――――――――――――――*/
+
+.alternativo-footer{
+    background-color: rgb(26, 50, 95);
+    .alternativo-contactos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-bottom: 1px solid #fff;
+        div{
+            h2{
+                font-size: 30px;
+                text-align: center;
+                color: #fff;
+            }
+            p{
+                font-size: 18px;
+                text-align: center;
+                color: rgb(194, 194, 194);
+            }
+        }
+        .alternativo-fiscales{
+            padding-left: 50px;
+            padding-right: 50px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            h2{
+                padding-top: 23px;
+            }
+        }
+    }
+    .alternativo-links{
+        color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #fff;
+        .footer-pacientes{
+            padding-top: 30px;
+            h2{
+                color: #fff;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            ul{
+                li{
+                    a{
+                        color: rgb(194, 194, 194);
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-profesionales{
+            padding-top: 30px;
+            h2{
+                color: #fff;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            ul{
+                li{
+                    a{
+                        color: rgb(194, 194, 194);
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-acercade{
+            padding-top: 8px;
+            h2{
+                color: #fff;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            ul{
+                li{
+                    a{
+                        color: rgb(194, 194, 194);
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-accesos{
+            padding-top: 10px;
+            h2{
+                color: #fff;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            ul{
+                li{
+                    a{
+                        color: rgb(194, 194, 194);
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logo-y-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .logo-footer{
+        img{
+            width: 300px;
+            padding: 20px;
+        }
+    }
+    .redes-sociales{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2{
+            width: 100%;
+            padding-top: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        a{
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+.alternativo-creacion{
+    h2{
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+    }
+    p{
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+}
