@@ -346,7 +346,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center; }
-    .logo-y-redes .redes-sociales h2 {
+    .logo-y-redes .redes-sociales .redes-alt-h2 {
       width: 100%;
       padding-top: 20px;
       color: #fff;
@@ -823,7 +823,7 @@ header {
   .index-creacion {
     padding-top: 30px; } }
 
-/**――――――――――――――――――――RESPONSIVE ALTERNATIVO――――――――――――――――――――*/
+/**―――――――――――――――――――― RESPONSIVE ALTERNATIVO ――――――――――――――――――――*/
 @media (max-width: 1130px) {
   /*? NAV */
   header img {
@@ -865,17 +865,17 @@ header {
   .accesos {
     padding-top: 10px; }
   .accesos-aplicativos, .accesos-aplicativos-guardia, .formulario-apps {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    border-right: none;
-    padding-left: 0;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #000; }
+    grid-column-start: 1 !important;
+    grid-column-end: 4 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly !important;
+    text-align: center !important;
+    border-right: none !important;
+    padding-left: 0 !important;
+    padding-bottom: 40px !important;
+    border-bottom: 1px solid #000 !important; }
   .accesos-apps {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -942,11 +942,11 @@ header {
   .alternativo-contactos, .alternativo-links, .logo-y-redes {
     flex-wrap: wrap; }
   .alternativo-contactos h2 {
-    font-size: 20px; }
+    font-size: 20px !important; }
   .alternativo-contactos p {
-    font-size: 14px; }
+    font-size: 14px !important; }
   .alternativo-fiscales {
-    border: none;
+    border: none !important;
     padding-bottom: 15px; }
   .alternativo-links {
     gap: 20px;
@@ -967,3 +967,7 @@ header {
     padding-top: 0; }
   .alternativo-creacion {
     padding-top: 30px; } }
+
+/**―――――――――――――――――――― TITULO ――――――――――――――――――――*/
+.titulo-guardia {
+  background-image: url(../img/Portada-Guardia.jpg); }

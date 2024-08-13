@@ -42,7 +42,7 @@
 /**―――――――――――――――――――― PACIENTES Y PROFESIONALES ――――――――――――――――――――*/
 
 .info-index{
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -167,7 +167,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    width: 100vw;
+    width: 100%;
     .turnos-index{
         background-image: url(../img/Turnos.png);
         background-repeat: no-repeat;
